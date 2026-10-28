@@ -1,245 +1,339 @@
 :root {
-  --fond: #0f1113;
-  --fond-menu: #0a0b0c;
-  --carte: #1a1d21;
-  --bordure: #2a2e34;
-  --texte: #e6e6e1;
-  --texte-doux: #9aa0a6;
-  --accent: #f59e0b;
-  --largeur-menu: 250px;
-  --police-titre: Impact, "Arial Narrow", sans-serif;
-  --police-texte: Arial, sans-serif;
+    --fond: #0f1113;
+    --fond-menu: #0a0b0c;
+    --carte: #1a1d21;
+    --bordure: #2a2e34;
+    --texte: #e6e6e1;
+    --texte-doux: #9aa0a6;
+    --accent: #f59e0b;
+    --largeur-menu: 250px;
+    --police-titre: Impact, "Arial Narrow", sans-serif;
+    --police-texte: Arial, sans-serif;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-  background: var(--fond);
-  color: var(--texte);
-  font-family: var(--police-texte);
-  font-size: 16px;
-  line-height: 1.6;
+    background: var(--fond);
+    color: var(--texte);
+    font-family: var(--police-texte);
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
 
 /* ---------- Menu latéral ---------- */
+
 .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: var(--largeur-menu);
-  height: 100vh;
-  background: var(--fond-menu);
-  border-right: 2px solid var(--accent);
-  display: flex;
-  flex-direction: column;
-  padding: 28px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--largeur-menu);
+    height: 100vh;
+    background: var(--fond-menu);
+    border-right: 2px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0;
 }
 
 .logo {
-  font-family: var(--police-titre);
-  font-size: 44px;
-  letter-spacing: 4px;
-  line-height: 1;
-  color: var(--accent);
-  padding: 0 28px 28px;
+    font-family: var(--police-titre);
+    font-size: 44px;
+    letter-spacing: 4px;
+    line-height: 1;
+    color: var(--accent);
+    padding: 0 28px 28px;
 }
 
-.menu nav { flex: 1; }
+.menu nav {
+    flex: 1;
+}
 
 .menu nav a {
-  display: block;
-  padding: 13px 28px;
-  border-left: 3px solid transparent;
-  color: var(--texte-doux);
-  transition: color 0.2s, background 0.2s, padding-left 0.2s;
+    display: block;
+    padding: 13px 28px;
+    border-left: 3px solid transparent;
+    color: var(--texte-doux);
+    transition: color 0.2s, background 0.2s, padding-left 0.2s;
 }
 
 .menu nav a:hover {
-  color: var(--texte);
-  padding-left: 34px;
+    color: var(--texte);
+    padding-left: 34px;
 }
 
 .menu nav a.active {
-  border-left-color: var(--accent);
-  background: var(--carte);
-  color: var(--texte);
+    border-left-color: var(--accent);
+    background: var(--carte);
+    color: var(--texte);
 }
 
-.menu .bouton { margin: 0 28px; }
+.menu .bouton {
+    margin: 0 28px;
+}
+
 
 /* ---------- Contenu ---------- */
-main { margin-left: var(--largeur-menu); }
+
+main {
+    margin-left: var(--largeur-menu);
+}
 
 .contenu {
-  max-width: 1000px;
-  padding: 48px 56px;
+    max-width: 1000px;
+    padding: 48px 56px;
 }
 
 .etiquette {
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
 }
 
-h1, h2, h3 {
-  font-family: var(--police-titre);
-  font-weight: 500;
-  letter-spacing: 2px;
-  line-height: 1;
-  text-transform: uppercase;
+h1,
+h2,
+h3 {
+    font-family: var(--police-titre);
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
-h1 { font-size: 76px; margin-bottom: 20px; }
-h2 { font-size: 40px; margin-bottom: 24px; }
-h3 { font-size: 28px; margin-bottom: 6px; }
+h1 {
+    font-size: 76px;
+    margin-bottom: 20px;
+}
 
-p { max-width: 62ch; color: var(--texte-doux); }
+h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+p {
+    max-width: 62ch;
+    color: var(--texte-doux);
+}
+
 
 /* ---------- Boutons aux coins coupés ---------- */
+
 .bouton {
-  display: inline-block;
-  padding: 11px 26px;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  background: var(--accent);
-  color: #000000;
-  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
-  transition: background 0.2s;
+    display: inline-block;
+    padding: 11px 26px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: var(--accent);
+    color: #000000;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    transition: background 0.2s;
 }
 
-.bouton:hover { background: #fbbf24; }
+.bouton:hover {
+    background: #fbbf24;
+}
 
 .bouton.contour {
-  background: var(--fond-menu);
-  box-shadow: inset 0 0 0 1px var(--accent);
-  color: #ffffff;
+    background: var(--fond-menu);
+    box-shadow: inset 0 0 0 1px var(--accent);
+    color: #ffffff;
 }
 
-.bouton.contour:hover { background: var(--carte); }
+.bouton.contour:hover {
+    background: var(--carte);
+}
+
 
 /* ---------- Bannière d'accueil ---------- */
+
 .banniere {
-  min-height: 460px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 56px;
-  border-bottom: 1px solid var(--bordure);
-  background-color: var(--carte);
-  background-image: linear-gradient(rgba(15, 17, 19, 0.88), rgba(15, 17, 19, 0.88)), url("../images/banniere.jpg");
-  background-size: cover;
-  background-position: center;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px;
+    border-bottom: 1px solid var(--bordure);
+    background-color: var(--carte);
+    background-image: linear-gradient(rgba(15, 17, 19, 0.88), rgba(15, 17, 19, 0.88)), url("../images/banniere.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .banniere p:not(.etiquette) {
-  margin-bottom: 28px;
-  font-size: 18px;
-  color: #ffffff;
-  text-shadow: 0 1px 3px #000000;
+    margin-bottom: 28px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 0 1px 3px #000000;
 }
-.banniere .actions { display: flex; gap: 14px; }
+
+.banniere .actions {
+    display: flex;
+    gap: 14px;
+}
+
 
 /* ---------- Cartes ---------- */
+
 .grille {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .carte {
-  background: var(--carte);
-  border: 1px solid var(--bordure);
-  padding: 14px 14px 20px;
-  transition: border-color 0.2s, transform 0.2s;
+    background: var(--carte);
+    border: 1px solid var(--bordure);
+    padding: 14px 14px 20px;
+    transition: border-color 0.2s, transform 0.2s;
 }
 
-.carte:hover { border-color: var(--accent); transform: translateY(-3px); }
+.carte:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
 
 .carte .visuel {
-  height: 130px;
-  margin-bottom: 14px;
-  background-color: var(--fond);
-  background-size: cover;
-  background-position: center;
+    height: 130px;
+    margin-bottom: 14px;
+    background-color: var(--fond);
+    background-size: cover;
+    background-position: center;
 }
 
-.carte p { font-size: 15px; }
+.carte p {
+    font-size: 15px;
+}
+
 
 /* ---------- Fiche du jeu ---------- */
+
 .fiche {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
-  border-top: 1px solid var(--bordure);
-  padding-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    border-top: 1px solid var(--bordure);
+    padding-top: 24px;
 }
 
-.fiche dt { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
-.fiche dd { color: var(--texte); }
+.fiche dt {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.fiche dd {
+    color: var(--texte);
+}
+
 
 /* ---------- Pied de page ---------- */
+
 footer {
-  margin-left: var(--largeur-menu);
-  padding: 24px 56px;
-  border-top: 1px solid var(--bordure);
-  font-size: 13px;
-  text-align: center;
-  color: var(--texte-doux);
+    margin-left: var(--largeur-menu);
+    padding: 24px 56px;
+    border-top: 1px solid var(--bordure);
+    font-size: 13px;
+    text-align: center;
+    color: var(--texte-doux);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+    * {
+        transition: none !important;
+    }
 }
+
 
 /* ---------- Pages intérieures ---------- */
-.contenu h1 { font-size: 56px; }
 
-.mode { padding-top: 0; }
-
-.visuel-large {
-  height: 200px;
-  margin-bottom: 24px;
-  background-color: var(--carte);
-  background-size: cover;
-  background-position: center;
-  border: 1px solid var(--bordure);
+.contenu h1 {
+    font-size: 56px;
 }
 
-.mode > p:not(.etiquette) { margin-bottom: 24px; }
+.mode {
+    padding-top: 0;
+}
+
+.visuel-large {
+    aspect-ratio: 16 / 9;
+    max-width: 640px;
+    margin-bottom: 24px;
+    background-color: var(--carte);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--bordure);
+}
+
+.mode>p:not(.etiquette) {
+    margin-bottom: 24px;
+}
+
 
 /* ---------- Formulaire de contact ---------- */
-.formulaire { display: grid; gap: 18px; max-width: 560px; }
+
+.formulaire {
+    display: grid;
+    gap: 18px;
+    max-width: 560px;
+}
 
 .formulaire label {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--accent);
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
 }
 
 .formulaire input,
 .formulaire textarea {
-  width: 100%;
-  padding: 12px 14px;
-  background: var(--carte);
-  border: 1px solid var(--bordure);
-  color: var(--texte);
-  font-family: inherit;
-  font-size: 16px;
+    width: 100%;
+    padding: 12px 14px;
+    background: var(--carte);
+    border: 1px solid var(--bordure);
+    color: var(--texte);
+    font-family: inherit;
+    font-size: 16px;
 }
 
 .formulaire input:focus,
-.formulaire textarea:focus { outline: 2px solid var(--accent); }
+.formulaire textarea:focus {
+    outline: 2px solid var(--accent);
+}
 
-.formulaire textarea { min-height: 140px; resize: vertical; }
+.formulaire textarea {
+    min-height: 140px;
+    resize: vertical;
+}
 
-button.bouton { border: 0; cursor: pointer; font-family: inherit; justify-self: start; }
+button.bouton {
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    justify-self: start;
+}
