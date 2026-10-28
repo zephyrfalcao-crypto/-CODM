@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CODM - Modes de jeu</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CODM - Modes de jeu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <aside class="menu">
-    <a href="CODM.html" class="logo">CODM</a>
-    <nav>
-      <a href="CODM.html">Accueil</a>
-      <a href="modes.html" class="active" aria-current="page">Modes de jeu</a>
-      <a href="armes.html">Armes et opérateurs</a>
-      <a href="cartes.html">Cartes et saisons</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" target="_blank" rel="noopener" class="bouton contour">Télécharger</a>
-  </aside>
+    <aside class="menu">
+        <a href="CODM.html" class="logo">CODM</a>
+        <nav>
+            <a href="CODM.html">Accueil</a>
+            <a href="modes.html" class="active" aria-current="page">Modes de jeu</a>
+            <a href="armes.html">Armes et opérateurs</a>
+            <a href="cartes.html">Cartes et saisons</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter" target="_blank" rel="noopener" class="bouton contour">Télécharger</a>
+    </aside>
 
-  <main>
-    <section class="contenu">
-      <p class="etiquette">// Modes de jeu</p>
-      <h1>Choisis ton terrain</h1>
-      <p>Call of Duty: Mobile propose trois grandes façons de jouer. Voici ce qui les distingue.</p>
-    </section>
+    <main>
+        <section class="contenu">
+            <p class="etiquette">// Modes de jeu</p>
+            <h1>Choisis ton terrain</h1>
+            <p>Call of Duty: Mobile propose trois grandes façons de jouer. Voici ce qui les distingue.</p>
+        </section>
 
-    <section class="contenu mode">
-      <div class="visuel-large" style="background-image: url('images/multijoueur.jpg');"></div>
-      <p class="etiquette">// Parties rapides</p>
-      <h2>Multijoueur</h2>
-      <p>Des matchs courts, en équipe ou chacun pour soi, sur des cartes issues de la série Call of Duty.</p>
-      <div class="grille">
-        <div class="carte"><h3>Duel par équipe</h3><p>Deux équipes s'affrontent, la première à atteindre le score gagne.</p></div>
-        <div class="carte"><h3>Mêlée générale</h3><p>Tout le monde contre tout le monde.</p></div>
-        <div class="carte"><h3>Domination</h3><p>Capture et garde des zones pour marquer des points.</p></div>
-        <div class="carte"><h3>Point stratégique</h3><p>Une zone change de place à intervalles réguliers, il faut la contrôler.</p></div>
-        <div class="carte"><h3>Recherche et destruction</h3><p>Une seule vie par manche : poser ou désamorcer la bombe.</p></div>
-      </div>
-    </section>
+        <section class="contenu mode">
+            <div class="mode-haut">
+                <div>
+                    <p class="etiquette">// Parties rapides</p>
+                    <h2>Multijoueur</h2>
+                    <p>Des matchs courts, en équipe ou chacun pour soi, sur des cartes issues de la série Call of Duty.</p>
+                </div>
+                <div class="visuel-large" style="background-image: url('images/multijoueur.jpg');"></div>
+            </div>
+            <div class="grille">
+                <div class="carte">
+                    <h3>Duel par équipe</h3>
+                    <p>Deux équipes s'affrontent, la première à atteindre le score gagne.</p>
+                </div>
+                <div class="carte">
+                    <h3>Mêlée générale</h3>
+                    <p>Tout le monde contre tout le monde.</p>
+                </div>
+                <div class="carte">
+                    <h3>Domination</h3>
+                    <p>Capture et garde des zones pour marquer des points.</p>
+                </div>
+                <div class="carte">
+                    <h3>Point stratégique</h3>
+                    <p>Une zone change de place à intervalles réguliers, il faut la contrôler.</p>
+                </div>
+                <div class="carte">
+                    <h3>Recherche et destruction</h3>
+                    <p>Une seule vie par manche : poser ou désamorcer la bombe.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="contenu mode">
-      <div class="visuel-large" style="background-image: url('images/battle-royale.jpg');"></div>
-      <p class="etiquette">// Dernier survivant</p>
-      <h2>Battle royale</h2>
-      <p>Des dizaines de joueurs sont largués sur une grande carte. Il faut trouver des armes, rester dans la zone qui se réduit et être le dernier en vie, seul ou en équipe.</p>
-    </section>
+        <section class="contenu mode">
+            <div class="mode-haut inverse">
+                <div class="visuel-large" style="background-image: url('images/battle-royale.jpg');"></div>
+                <div>
+                    <p class="etiquette">// Dernier survivant</p>
+                    <h2>Battle royale</h2>
+                    <p>Des dizaines de joueurs sont largués sur une grande carte. Il faut trouver des armes, rester dans la zone qui se réduit et être le dernier en vie, seul ou en équipe.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="contenu mode">
-      <div class="visuel-large" style="background-image: url('images/zombies.jpg');"></div>
-      <p class="etiquette">// Coopération</p>
-      <h2>Zombies</h2>
-      <p>Un mode de survie contre des vagues de zombies, à jouer en équipe pour tenir le plus longtemps possible.</p>
-      <a href="armes.html" class="bouton">Voir les armes</a>
-    </section>
-  </main>
+        <section class="contenu mode">
+            <div class="mode-haut">
+                <div>
+                    <p class="etiquette">// Coopération</p>
+                    <h2>Zombies</h2>
+                    <p>Un mode de survie contre des vagues de zombies, à jouer en équipe pour tenir le plus longtemps possible.</p>
+                    <p style="margin-top: 24px;"><a href="armes.html" class="bouton">Voir les armes</a></p>
+                </div>
+                <div class="visuel-large" style="background-image: url('images/zombies.jpg');"></div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    Projet universitaire, site non officiel. Call of Duty: Mobile © Activision.
-  </footer>
+    <footer>
+        Projet universitaire, site non officiel. Call of Duty: Mobile © Activision.
+    </footer>
 
 </body>
+
 </html>
